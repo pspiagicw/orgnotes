@@ -1,0 +1,100 @@
+* Tasks
+** TODO Task: Give Book to Kittu
+* College Tasks
+** TODO Task: Probablity Assignment 1 
+   SCHEDULED: <2021-10-10 Sun>
+** TODO Task: Probab Assignment 2
+   SCHEDULED: <2021-10-10 Sun>
+** DONE Task: DAA Activity 5
+   SCHEDULED: <2021-10-06 Wed>
+   The compression algorithm one
+** TODO Task: 117 to 137 Page Number NLP Read. 
+   SCHEDULED: <2021-10-13 Wed>
+** DONE Task: Read DAA and DBMS notes 
+   SCHEDULED: <2021-10-07 Thu>
+** DONE Task: Read PPT of DAA and prepare for questions 
+   SCHEDULED: <2021-10-06 Wed>
+** DONE Task: Design the architecture diagram for our presentation 
+   SCHEDULED: <2021-10-06 Wed>
+** DONE Task: Complete Maths Tutorial 
+   SCHEDULED: <2021-10-07 Thu>
+** DONE Task: Complete Assignment of DBMS 
+   SCHEDULED: <2021-10-12 Tue>
+** TODO Task:  Attempt alll electrical questions 
+   SCHEDULED: <2021-10-15 Fri>
+** DONE Task: Complete all notes ER diagrams in DBMS 
+   SCHEDULED: <2021-10-13 Wed 20:00>
+** TODO Task: Read and make notes on Probablity and Statistics 
+   SCHEDULED: <2021-10-16 Sat>
+** CANCELLED Task: Just read the presentation in NLP class 
+   SCHEDULED: <2021-10-17 Sun>
+** RESEARCH Task: Read paper related to project review-1 
+   SCHEDULED: <2021-10-16 Sat>
+** RESEARCH Task: Read about star-delta and delta-star 
+   SCHEDULED: <2021-10-15 Fri>
+** TODO Task: Complete all subject studies
+   SCHEDULED: <2021-10-17 Sun>
+   - [x] DBMS
+   - [x] DAA
+   - [ ] Electric
+   - [ ] NLP
+   - [ ] Probablity
+** DONE Task: Electric Lecture 
+   SCHEDULED: <2021-10-18 Mon 08:30>
+** DONE Task: DBMS Lecture
+   SCHEDULED: <2021-10-18 Mon 13:15>
+** DONE Task: Probablity Lecture 
+   SCHEDULED: <2021-10-18 Mon 16:25>
+** TODO Task: Watch Lecture of DAA and complete assignment
+   SCHEDULED: <2021-10-18 Mon 11:00>
+** TODO Task: Code Review with Nevpro
+   SCHEDULED: <2021-10-18 Mon 19:00>
+   Meeting Link -->
+   https://us02web.zoom.us/j/88137006157?pwd=ei9aQkNudURkVFBEZmVmMXpleWxZUT09
+** CANCELLED Task: Jogging
+   SCHEDULED: <2021-10-18 Mon 18:00>
+** TODO Task: Write read papers on the notebook
+   SCHEDULED: <2021-10-18 Mon 15:00>
+** TODO Task: Read Introduction to Algorithms
+   SCHEDULED: <2021-10-18 Mon 22:00>
+** TODO Task: Read NLP Unit 1
+   SCHEDULED: <2021-10-18 Mon 23:00>
+** DONE Task: Find out your timetable. 
+   SCHEDULED: <2021-10-18 Mon 12:30>
+   From this mail
+   [[mu4e:msgid:CAMZ8H37z4-mq1P8NjDxJT3BiPfmoN51L32TfHxvp1RSQ4+YqfQ@mail.gmail.com][Schedule - Mid-Term Examinations, Fall Semester 2021-22]] 
+** TODO Task: Find a Bloody Group for DAA
+   SCHEDULED: <2021-10-18 Mon>
+* Work Tasks
+** TODO Task: Add tests for 'boombash' 
+** DONE Task: Write the blog Endgame for Linux Introductory blogs. 
+   SCHEDULED: <2021-10-07 Thu>
+** DONE Task: Complete LFS installation 
+** RESEARCH Task: Write Programming Article 
+   SCHEDULED: <2021-10-08 Fri>
+** DONE Task: GWOC Issue #3640 
+   SCHEDULED: <2021-10-08 Fri>
+** TODO Task: Start with BLFS 
+** DONE Task: Code Review on Nevpro2 
+   SCHEDULED: <2021-10-13 Wed 18:00>
+** RESEARCH Task: Write a article  regarding the hello world of Python 
+   SCHEDULED: <2021-10-16 Sat>
+** TODO Task: Read Alan Turing Paper 
+** TODO Task: Read WCGAN paper 
+** TODO Task: Read Multiscale gradient paper
+** TODO Task: Read Wassertein GAN 
+** TODO Task: Read Progressive Growing GAN Paper 
+** TODO Task: Read Two Time Scale Update Rule 
+** TODO Task: Read Self Attention GAN paper 
+** TODO Task: Read Person Reidentification Paper 
+** TODO Task: Try Keynav 
+   https://github.com/jordansissel/keynav
+   Look here for more information
+   https://github.com/mgsloan/mgsloan-dotfiles
+** DONE Task: Create new mode for PsuedoCode Mode 
+   See Pseudocode mode
+   SCHEDULED: <2021-10-19 Tue>
+* General Tasks
+** DONE Task: Add desktop shortcut for 4132216974 
+** DONE Task: Keep the vegetables 
+   SCHEDULED: <2021-10-18 Mon 10:30>

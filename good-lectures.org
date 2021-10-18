@@ -1,0 +1,32 @@
+* Good Lectures To Watch When Bored
+  These lectures are the best way to kill time and not watch anything else.
+  I don't have any interest in watching anime or any OTT Content.
+
+  These lectures are right now simply listed , but can be grouped later in time.
+
+** Why is functional Programming not the norm?
+   Cool Video explaning why the popular language became popular and explores the boundary between functional and object-oriented languages.
+   Link: [[https://www.youtube.com/watch?v=QyJZzq0v7Z4]]
+   
+** Instantly Better Vim
+   This is a vim based lacture showing some of the extensions the speaker has written that makes Vim just better.
+   It is useless in Emacs Org Mode but entertaining to watch
+   Link: [[https://www.youtube.com/watch?v=aHm36-na4-4]]
+
+** Evil Mode:How I learned to Stop Worrying and Love Emacs
+   Provides a short introduction to Emacs and it's many features.
+   Link: [[https://www.youtube.com/watch?v=JWD1Fpdd4Pc]]
+
+** "Uncle" Bob Martin: The Future of Programming
+   Explores how programming has evolved , throughout the years.
+   Link: [[https://www.youtube.com/watch?v=ecIWPzGEbFc]]
+   
+** Dylan Beattle: The Art of Code
+   The unique lecture onto the languages , programming languagues
+   Link: [[https://www.youtube.com/watch?v=6avJHaC3C2U]]
+   
+** Kevlin Henny: Seven Ineffective Code Habits of Many Programmers
+   Very unique lecture on how cleanly you can write and create programming languages
+   Link: [[https://www.youtube.com/watch?v=ZsHMHukIlJY]]
+   
+   

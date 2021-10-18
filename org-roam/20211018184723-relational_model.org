@@ -1,0 +1,69 @@
+:PROPERTIES:
+:ID:       a2ff9356-803a-4629-a751-9004647a5e75
+:END:
+#+title: Relational Model
+#+author: pspiagicw
+#+date:<2021-09-20 Mon> 
+* Relational Model
+  Primary data model for commercial data processing applications.
+  Advantages:
+  * Simplicity
+  * Eases the job of the programmer
+** Structure of Relational Databases
+   Relationship database --> Collection of tables with unique names
+   Tables --> relations
+   Rows of the table --> records or tuples
+   Columns of the table --> attributes or fields.
+   Domain --> Set of permitted values of the attributes
+   Null Value --> Special value that signifies unknown value.
+** Databse schema and instance
+*** Database schema
+    Logical design or overrall design. Does not change frequently.
+*** Database instance:
+    Snapshot of the data in the database at a given time.
+** Relational schema and instance
+*** Relation Schema
+    Consists of a list of attributes and their corresponding domains
+    Similar to a variable in programming language
+    Does not change frequently
+*** Relation instance:
+    Set of doman values in a relation at a particular point of time.
+    Similar to type definitions in programming langugage.
+    Changes frequently
+* Codd's Rules
+** Rule 0:
+   All subsequent rules are based on the notion that in order
+   for a databse to be considered relational , it must use it's relational facilities
+   exclusively to manage the database.
+** Rule 1: Information Rule:
+   Everything on a database must be stored in a table format.
+** Rule 2: Garunteed Access Rule
+   Each unique peice of data (atomic value) should be accessibel by :
+   ~Table Name + Primary Key(Row) + Attribute(Column)~.
+   Directly accessing using pointer is a violation of this rule.
+** Rule 3:Systematic treatment of NULL values
+   NULL values in a database must be given a systematic and uniform treatment.
+** Rule 4:Active Online Catalog
+   Database dictionary is the structure description of the complete Database.
+   Catalog must be governed by the same rules as the rest of the database.
+** Rule 5: Powerful and well-strucutred language
+   One well structured language must be there to provide all manners of access to the data.
+** Rule 6: View updating Rule:
+   All the views of a database which can theoritically be updated , must also be updateble by the system.
+** Rule 7: High-Lvel Insert , Update and Delete Rule
+   Database must support insertion , updation and deletion . This must not be limited to a single row,
+   it must also support union , intersection and minus
+** Rule 8: Physical Data Independence
+   Any modification in the physical location of a table should not enforce modification at application level.
+** Rule 9: Logical Data Independence:
+   Any modification in logical or conceptual schema of a table should not enforce modification at application level.
+** Rule 10: Integrity Independence:
+   Integrity constraints modified at database level should not enforce modification at application level
+** Rule 11: Distribution Independence
+   The end user must not be able to see the data is distributed over various locations.
+   Users should always get the impressions that the data is located at one site only.
+** Rule 12: Non-Subversion Rule
+   Low level access to data should not be able to bypass integrity rule to change data.
+* Practical
+ [[id:5f88ce82-97f9-4bc0-bf3f-84a9fcbe3913][MySQL Practical 1]] 
+   

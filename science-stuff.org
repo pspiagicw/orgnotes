@@ -1,0 +1,8 @@
+* Science Stuff
+  Stuff in science that I liked
+** Zanibekhov Effect
+   :property:
+   :creator: Veritasium
+   :end:
+   The most cool effect russians kept a secret.Doomed america's first satellite.
+   [[https://www.youtube.com/watch?v=1VPfZ_XzisU]]

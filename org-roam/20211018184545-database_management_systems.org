@@ -1,0 +1,54 @@
+:PROPERTIES:
+:ID:       ad69a0a5-5ab1-405d-957c-7fc612fc088f
+:END:
+#+title: Database Management Systems
+#+author: pspiagicw
+#+date:<2021-09-08 Wed> 
+* Database Management Systems
+** DBMS: Database Management System
+   Consist of 2 parts
+   * Data: Invidisual piece of information that cannot be broken down.Raw facts that provides no standalone meaning.
+   * Information: Processed or organized or interrelated data
+   * Database: Collection of interrelated data
+   * Management: Set of rules and procedures which helps to create , organize and manipulate.
+** DBMS Applications
+   * Banking
+   * Airlines
+   * Universities
+   * Sales
+   * HR
+   * Manufacturing
+** What is DBMS ?
+   Collection of interrelated data and set of programs to access those data
+   To provide a environment that is both convinient and efficient to use for retrieving data
+** Examples
+   * MySQL
+   * MariaDB
+   * OracleDB
+** Alternative to Database systems
+*** File Management Systems
+    Store permament records in various files
+    Requires different programs to extract records from and add records.
+    Drawbacks:
+    * No ACID properties
+    * No redundancy
+    * Security problems.
+** Difference
+    | A file system is a software that manages and organizes files in a storage medium. It controls how data is stored and retrieved | DBMS is a software application. It is used for accessing , creating and managing databases |
+    | The files system provides the details of data representation and storage of data                                               | DBMS gives an abstract view of data that hides the details                                 |
+    | Storing and retrieving of data can't be done efficiently                                                                       | DBMS is efficient in storing and retrieve data                                             |
+    | It does not offer data recovery processes                                                                                      | This is backup recovery for data in DBMS                                                   |
+    | The file system doesn't have a crash recovery mechanism                                                                        | DBMS offers good protection mechanism                                                      |
+    | Protecting a file system is very difficult                                                                                     | DBMS provides crash recovery system                                                        |
+    | Reduncancy is greater                                                                                                          | Redundancy low                                                                             |
+    | Inconsistent                                                                                                                   | Low inconsistency                                                                        |
+** Data Abstraction
+   They are made up of complex data structures , to ease the user interaction developers hide internal irrelevant details
+*** Physical Level
+    * Lowest level of abstraction
+    * Actual storage of data on the disk.
+    * How the data is stored
+*** Logical Level
+    * Shows what data is stored.
+    * What relationship exists among the database
+*** View Level

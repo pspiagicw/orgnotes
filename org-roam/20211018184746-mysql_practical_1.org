@@ -1,0 +1,167 @@
+:PROPERTIES:
+:ID:       5f88ce82-97f9-4bc0-bf3f-84a9fcbe3913
+:END:
+#+title: MySQL Practical 1
+#+author: pspiagicw
+#+date: <2021-09-15 Wed>
+#+property: header-args:sql :dhhost 127.0.0.1 :engine mysql :dbpassword shrgooglegithub :database practical :resutls output
+
+* Practical 1
+  
+** Creating and using databases
+
+
+   #+begin_src sql
+create database shit;
+drop database shit;
+use shit;
+   #+end_src
+  
+** Listing all tables
+   #+begin_src sql
+show tables;
+   #+end_src
+
+   #+RESULTS:
+   | Tables_in_practical |
+   |---------------------|
+   | people              |
+
+   
+** Creating a table
+   #+begin_src sql
+create table student (stdid int , stname varchar(25) , marks int);
+   #+end_src
+
+   #+RESULTS:
+   |---|
+   
+   Using existing table
+   #+begin_src sql
+create table horde as select stdid , marks from student;
+   #+end_src
+
+
+** Describe a Table
+   #+begin_src sql
+desc student;
+   #+end_src
+
+   #+RESULTS:
+   | Field  | Type        | Null | Key | Default | Extra |
+   |--------+-------------+------+-----+---------+-------|
+   | stdid  | int(11)     | YES  |     | NULL    |       |
+   | stname | varchar(25) | YES  |     | NULL    |       |
+   | marks  | int(11)     | YES  |     | NULL    |       |
+  
+** Renaming table
+   #+begin_src sql
+alter table student rename to people;
+   #+end_src
+
+   #+RESULTS:
+   |---|
+
+   This method can take multiple arguments ,
+   example ~rename table table1 to newtable1 , table2 to newtable2~
+   #+begin_src sql
+rename table people to student;
+   #+end_src
+
+   #+RESULTS:
+   |---|
+
+
+   
+   
+** Adding columns
+   Adding single column
+   #+begin_src sql
+alter table people add column add int;
+   #+end_src
+
+   #+RESULTS:
+   |---|
+
+   Adding multiple columns
+   #+begin_src sql
+alter table people add column (phoneno int , address varchar(50));
+   #+end_src
+
+   #+RESULTS:
+   |---|
+   
+   
+** Deleting columns
+   #+begin_src sql
+alter table people drop column stname;
+   #+end_src
+
+   #+RESULTS:
+   |---|
+   #+begin_src sql
+desc people;
+   #+end_src
+
+   #+RESULTS:
+   | Field   | Type        | Null | Key | Default | Extra |
+   |---------+-------------+------+-----+---------+-------|
+   | stdid   | int(11)     | YES  |     | NULL    |       |
+   | marks   | int(11)     | YES  |     | NULL    |       |
+   | phoneno | int(11)     | YES  |     | NULL    |       |
+   | address | varchar(50) | YES  |     | NULL    |       |
+
+   Also multiple columns
+   #+begin_src sql
+alter table people drop column marks , drop column phoneno;
+   #+end_src
+
+   #+RESULTS:
+   |---|
+
+   #+begin_src sql
+desc people;
+   #+end_src
+
+   #+RESULTS:
+   | Field   | Type        | Null | Key | Default | Extra |
+   |---------+-------------+------+-----+---------+-------|
+   | stdid   | int(11)     | YES  |     | NULL    |       |
+   | address | varchar(50) | YES  |     | NULL    |       |
+
+   You can also add and drop columns in one command
+   #+begin_src sql
+alter table people add column marks int , drop column address;
+   #+end_src
+
+   #+RESULTS:
+   |---|
+
+   #+begin_src sql
+desc people;
+   #+end_src
+
+   #+RESULTS:
+   | Field | Type    | Null | Key | Default | Extra |
+   |-------+---------+------+-----+---------+-------|
+   | stdid | int(11) | YES  |     | NULL    |       |
+   | marks | int(11) | YES  |     | NULL    |       |
+
+   
+** Changing column
+   #+begin_src sql
+alter table people change marks phoneno varchar(20);
+   #+end_src
+
+   #+RESULTS:
+   |---|
+
+   #+begin_src sql
+desc people;
+   #+end_src
+
+   #+RESULTS:
+   | Field   | Type        | Null | Key | Default | Extra |
+   |---------+-------------+------+-----+---------+-------|
+   | stdid   | int(11)     | YES  |     | NULL    |       |
+   | phoneno | varchar(20) | YES  |     | NULL    |       |

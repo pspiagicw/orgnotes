@@ -1,0 +1,140 @@
+:PROPERTIES:
+:ID:       97180e72-7898-4c2b-a99b-a1fb6f8c7790
+:END:
+#+title: Joins in MySQL
+#+author: pspiagicw
+#+date:<2021-09-27 Mon>
+#+property: header-args:sql :dhhost 127.0.0.1 :engine mysql :dbpassword shrgooglegithub :database practical :resutls output
+* JOIN Operators
+** Natural Join
+   This is a type of join when two tables have a common attribute.
+   Denoted by sumbol $\bowtie$.
+   Therefore $Table1\bowtie Table2$
+   #+name: Table1
+   | A | B | C |
+   | a | b | c |
+   | d | b | c |
+   | b | b | f |
+   | c | a | d |
+   #+name: Table2
+   | B | C | D |
+   | b | c | d |
+   | b | c | e |
+   | a | d | b |
+   This is the natural join of the two tables.
+   #+name: Natural Join
+   | A | B | C | D |
+   | a | b | c | d |
+   | a | b | c | e |
+   | d | b | c | d |
+   | d | b | c | e |
+   | c | a | d | b |
+** Theta Join
+   Defines a relation that contains tuples satisfying the predicate F from the Cartesian Product of R and S
+
+   Can rewrite theta join using basic selection and cartesian product operations
+   Denoted using $\bowtie_{f}$ , where f is condition.
+   $R\bowtie_{f} S=\sigma_{f} (R \times S)$
+
+   Example.
+   #+name: Student
+   | RegNo  | Name  | Age |      Phone |
+   | BIT001 | Ram   |  15 | 9830192939 |
+   | BIT023 | Selvi |  17 | 1929389191 |
+   #+name: Sub_RegID
+   | SRegno | Subject  |
+   | BIT001 | Physics  |
+   | BIT023 | Computer |
+   | BIT023 | OS       |
+   ~list studetails from student , sub_regd where regno=sregno;~
+   $\sigma_{regno=sregno} ( Student \times Subregid )$.
+   $Student \times Subregid$ is:
+   | RegNo | Name | Age | Phone | SRegNo | Subject |
+   |       |      |     |       |        |         |
+   ~list name , age from student,sub_regd where regno=sregno;~
+   $\pi_{name,age}(\sigma_{regno=sregno} ( Student \times Subregid )$
+** Outer Join
+*** Left Outer Join
+    All fields from the left table , but only common rows are present from right.
+    All empty fields NULL
+*** Right Outer Join
+    All fields from right table , but only common rows are present from left.
+    All empty fields NULL
+*** Full Outer Join
+    All fields present from both tables , irrespective of common columns,
+    if present common columns matched.
+    All empty fields NULL
+* Generalized Projection
+  Use /as/ operator for renaming custom projection query.
+  #+name: credit_acct
+  | cred_id | limit | balance |
+  "Compute available credit for every credit account"
+  Answer:
+  $ \pi_{\text{cred_id},(limit - balance ) as \text{available_credit}} ( \text{credit_acct} ) $
+* Aggregate Functions
+  Denoted by $\textsl{G}_{operation}$ , where operation is one of the below.
+** Sum
+   Sums the values in the collection.
+   Denoted by $\textsl{G}_{sum}$.
+   Here: $\textsl{G}_{sum(salary)} ( Programmers )$
+   #+begin_src sql
+select sum(salary) from programmers;
+   #+end_src
+
+   #+RESULTS:
+   | sum(salary) |
+   |-------------|
+   |       10645 |
+
+** Avg
+   Computes the avg of values in the collection
+   Denoted by $\textsl{G}_{avg}$
+   Here: $\textsl{G}_{avg(salary)} ( Programmers )$
+   #+begin_src sql
+select avg(salary) from programmers;
+   #+end_src
+
+   #+RESULTS:
+   | avg(salary) |
+   |-------------|
+   |   5322.5000 |
+
+** Count
+   Counts number of elements in the collection
+   Denoted by $\textsl{G}_{count}$
+   Here: $\textsl{G}_{count{salary)} (Programmers)$
+   #+begin_src sql
+select count(salary) from programmers;
+   #+end_src
+
+   #+RESULTS:
+   | count(salary) |
+   |---------------|
+   |             2 |
+
+** Min
+   Returns minimum value in the collection
+   Denoted by $\textsl{G}_{min}$
+   Here: $\textsl{G}_{min(salary)} (Programmers)$
+   #+begin_src sql
+select min(salary) from programmers;
+   #+end_src
+
+   #+RESULTS:
+   | min(salary) |
+   |-------------|
+   |         145 |
+
+** Max
+   Returns the maximum value in the collection.
+   Denoted by $\textsl{G}_{max}$
+   Here: $\textsl{G}_{max(salary)} ( Programmers)$
+   #+begin_src sql
+select max(salary) from programmers;
+   #+end_src
+
+   #+RESULTS:
+   | max(salary) |
+   |-------------|
+   |       10500 |
+

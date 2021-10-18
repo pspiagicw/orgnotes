@@ -1,0 +1,69 @@
+:PROPERTIES:
+:ID:       eeeba756-3c33-41d3-8743-a2eb3e5b82a7
+:END:
+#+title: Entity Representation Diagrams
+#+author: pspiagicw
+#+date:<2021-09-17 Fri> 
+
+* ER Diagram
+  "Top-Down" Approach to database design
+  Used at conceptual design phase of the design process
+  Important Terms
+   * Entity Sets
+   * Relationship sets
+   * Attributes
+** ER Modeling
+   Graphical technique for understanding and organizing the data independent of the actual database implementation
+** Entity Sets
+   Entity is a thing that has independent existence about which we indent to collect data.
+   Row of a table.
+   Entity Instance: Particular member of the entity type.
+   Attributes: Properties/characteristics that describe entities relationshipss
+   Types of Entity
+*** Strong Entity
+    The attribute can be uniquely identitified using a subset of it's attributes.
+*** Weak Entity
+    The attribute cannot be uniquely identified using the subset of it's attribute.
+    They need help using another entity.Also called weak entity need participation.
+  | Strong Entity                                                     | Weak Entity                                                            |
+  |-------------------------------------------------------------------+------------------------------------------------------------------------|
+  | Always has primary key                                            | It does not have any primary key                                       |
+  | Represented by rectangle                                          | Represented by double rectangle                                        |
+  | A member is called dominant entity set                            | The member called subordiate entity set                                |
+  | Relationship between two strong entity shown using diamond symbol | Relationship between strong and weak shown using double diamond symbol |
+  |-------------------------------------------------------------------+------------------------------------------------------------------------|
+** Attributes
+   Types of attributes
+*** Simple: Can't be divided further , also called atomic value  , example: age.
+*** Composite: That can be divided into more attribute , example: Full Name
+*** Derived Attribute: Attribute that can be derived using some other attribute , example: age from dob.
+*** Single-valued attribute: A attribute that contains a single value , example: age.
+*** Multi-valued attribute: A attribute that can contain multiple values , example: multiple mobile numbers.
+** Relationships
+   Types of relationships
+*** One-to-Many: One entity has relationship between many differnt entities.
+    Example: One parent can have many children
+*** One-to-One: One entity has relationship between single different entity
+    Example: One person has one aadhar card.
+*** Many-to-One: Multiple entity related to single entity
+    Example: Multiple students can have one teacher.
+*** Many-to-Many: Multiple entitiy related to multiple entity:
+    Example: Multiple teachers could teach multiple subjects.
+** Relationship participation
+   Types of relationship participation
+*** Total: Every entity instance must be connected through the relationship to another instance of the other participating entity types.
+    Represented using single line between entity
+*** Partial: All instances need not participate.
+    Represented using double line between entity.
+** Basic Structure of ER diagram
+*** Rectangles:
+    Represent entity types.
+**** First part contains the name of the entity
+**** Second part conatins the names of all the attributes of the entity set.
+     Attributes part of primary key are underlined.
+*** Ellipses: Symbol represent attributes
+*** Diamonds: Symbol represent relationship types
+*** Lines: It links attributes to entity types and entity types with other relationship types
+*** Primary Key: Attributes are underlined.
+*** Double Ellipse: Represent multi-valued attributes.
+

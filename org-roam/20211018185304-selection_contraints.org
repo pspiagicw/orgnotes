@@ -1,0 +1,148 @@
+:PROPERTIES:
+:ID:       3f2bcca6-b317-41be-b71a-ec59289cceb7
+:END:
+#+title: Selection Contraints
+#+author: pspiagicw
+#+date:<2021-10-18 Mon>
+#+property: header-args:sql :dhhost 127.0.0.1 :engine mysql :dbpassword shrgooglegithub :database shit :resutls output
+* Selection Contraints
+** Order By
+   #+begin_src sql
+select * from programmers order by salary;
+   #+end_src
+
+   #+RESULTS:
+   | ename        | empid | age | address     | department | salary |
+   |--------------+-------+-----+-------------+------------+--------|
+   | aturing      |    98 |  98 | UK          | Hardware   |      0 |
+   | kenthompson  |   102 |  32 | US          | Compiler   |    129 |
+   | djikstra     |   234 |  12 | US          | Compiler   |    129 |
+   | rstallman    |    12 |  89 | US          | OS         |    145 |
+   | jgosling     |   165 |  90 | US          | Compiler   |    165 |
+   | grossum      |   290 |  18 | Netherlands | Compiler   |    168 |
+   | mzuckerburg  |   167 |   9 | US          | Web        |    168 |
+   | pspiagicwiwd |   202 |  11 | India       | OS         |    500 |
+   | torvalds     |   250 |  21 | Finland     | OS         |   1050 |
+   | mrsnowden    |     0 |  22 | Russia      | Hacking    |  10500 |
+  
+   #+begin_src sql
+select * from programmers order by salary DESC;
+   #+end_src
+
+   #+RESULTS:
+   | ename        | empid | age | address     | department | salary |
+   |--------------+-------+-----+-------------+------------+--------|
+   | mrsnowden    |     0 |  22 | Russia      | Hacking    |  10500 |
+   | torvalds     |   250 |  21 | Finland     | OS         |   1050 |
+   | pspiagicwiwd |   202 |  11 | India       | OS         |    500 |
+   | mzuckerburg  |   167 |   9 | US          | Web        |    168 |
+   | grossum      |   290 |  18 | Netherlands | Compiler   |    168 |
+   | jgosling     |   165 |  90 | US          | Compiler   |    165 |
+   | rstallman    |    12 |  89 | US          | OS         |    145 |
+   | kenthompson  |   102 |  32 | US          | Compiler   |    129 |
+   | djikstra     |   234 |  12 | US          | Compiler   |    129 |
+   | aturing      |    98 |  98 | UK          | Hardware   |      0 |
+   #+begin_src sql
+select * from programmers order by salary , age;
+   #+end_src
+
+   #+RESULTS:
+   | ename        | empid | age | address     | department | salary |
+   |--------------+-------+-----+-------------+------------+--------|
+   | aturing      |    98 |  98 | UK          | Hardware   |      0 |
+   | djikstra     |   234 |  12 | US          | Compiler   |    129 |
+   | kenthompson  |   102 |  32 | US          | Compiler   |    129 |
+   | rstallman    |    12 |  89 | US          | OS         |    145 |
+   | jgosling     |   165 |  90 | US          | Compiler   |    165 |
+   | mzuckerburg  |   167 |   9 | US          | Web        |    168 |
+   | grossum      |   290 |  18 | Netherlands | Compiler   |    168 |
+   | pspiagicwiwd |   202 |  11 | India       | OS         |    500 |
+   | torvalds     |   250 |  21 | Finland     | OS         |   1050 |
+   | mrsnowden    |     0 |  22 | Russia      | Hacking    |  10500 |
+
+   #+begin_src sql
+select * from programmers order by salary asc, age desc;
+   #+end_src
+
+   #+RESULTS:
+   | ename        | empid | age | address     | department | salary |
+   |--------------+-------+-----+-------------+------------+--------|
+   | aturing      |    98 |  98 | UK          | Hardware   |      0 |
+   | kenthompson  |   102 |  32 | US          | Compiler   |    129 |
+   | djikstra     |   234 |  12 | US          | Compiler   |    129 |
+   | rstallman    |    12 |  89 | US          | OS         |    145 |
+   | jgosling     |   165 |  90 | US          | Compiler   |    165 |
+   | grossum      |   290 |  18 | Netherlands | Compiler   |    168 |
+   | mzuckerburg  |   167 |   9 | US          | Web        |    168 |
+   | pspiagicwiwd |   202 |  11 | India       | OS         |    500 |
+   | torvalds     |   250 |  21 | Finland     | OS         |   1050 |
+   | mrsnowden    |     0 |  22 | Russia      | Hacking    |  10500 |
+** Group by
+   This statement groups rows that have the same values into summary row.
+
+   The Group by statement is often used with aggreagate functions to gropu
+   the result-set by one or more columns.
+
+   In the query , group by clause is placed after /where/ clause.
+
+   In the query , /group by/ clause is placed before /order by/ clause.
+
+
+   #+RESULTS:
+   | ename        | empid | age | address     | department | salary |
+   |--------------+-------+-----+-------------+------------+--------|
+   | torvalds     |   250 |  21 | Finland     | OS         |   1050 |
+   | pspiagicwiwd |   202 |  11 | India       | OS         |    500 |
+   | grossum      |   290 |  18 | Netherlands | Compiler   |    168 |
+   | mrsnowden    |     0 |  22 | Russia      | Hacking    |  10500 |
+   | aturing      |    98 |  98 | UK          | Hardware   |      0 |
+   | rstallman    |    12 |  89 | US          | OS         |    145 |
+
+   #+begin_src sql
+select address , count(*) from programmers group by address;
+   #+end_src
+
+   #+RESULTS:
+   | address     | count(*) |
+   |-------------+----------|
+   | Finland     |        1 |
+   | India       |        1 |
+   | Netherlands |        1 |
+   | Russia      |        1 |
+   | UK          |        1 |
+   | US          |        5 |
+
+   #+begin_src sql
+select address , count(*) from programmers group by address order by count(address) DESC;
+   #+end_src
+
+   #+RESULTS:
+   | address     | count(*) |
+   |-------------+----------|
+   | US          |        5 |
+   | Netherlands |        1 |
+   | Finland     |        1 |
+   | India       |        1 |
+   | UK          |        1 |
+   | Russia      |        1 |
+** Having Clause
+   The having clause was added because WHERE keyword could not be used with aggregate functions
+
+   #+begin_src sql
+select name , sum(salary) from employee group by name having sum(salary) > 3000;
+   #+end_src
+* Questions
+** Question 1
+   :PROPERTIES:
+   :ATTACH_DIR: /home/pspiagicw/documents/database-management-systems/selection-contrains-att
+   :END:
+   
+   Answer Included:
+   [[file:selection-contrains-att/screenshot-20211018-135927.png]] 
+   
+  
+   Question for above diagram:
+   List the employee details those total-salary > 3000;
+* Practical
+  [[id:fba317bd-8a90-48e9-b8aa-fdf98f9e0001][MySQL Practical 5]] 
+

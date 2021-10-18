@@ -1,0 +1,111 @@
+:PROPERTIES:
+:ID:       41cbb2ae-6c42-4e2e-9d9b-c91038b487cb
+:END:
+#+title: Functional Dependencies
+#+author: pspiagicw
+#+date: <2021-10-04 Mon>
+#+property: header-args:sql :engine mysql :dbhost 127.0.0.1 :dbuser pspiagicw :dbpassword shrgooglegithub :database shit
+* Functional Dependencies
+  Related to attributes/ columns.
+  
+  * It is a constraint between two set of attributes
+  * It is a relationship that exist when one attribute uniquely determines another attibute
+  * It is property of the attributes of the schema
+  
+
+  Represented as X->Y , y is functionally dependent on X.
+  X --> Determinant set( left-hand side)
+  y --> Dependent attribute( right-hand side)
+
+  Left Hand side determines values of attributs at right hand side.
+
+  X-->Y holds if whenever two tuples have the same value for X ,
+  they must have the same value for Y.
+
+  Example
+
+  |-----+---------+-------+-------+-------+-----------|
+  | SSN | Pnumber | Hours | Ename | Pname | Plocation |
+  |-----+---------+-------+-------+-------+-----------|
+
+  * Social Security Number determines employee name
+    SSN --> Ename
+  * Project Number determines Project Name and location
+    Pnumber --> (Pname ,Plocation)
+  * SSN and Pnumber determine hours per week.
+    {SSN,Pnumber} --> Hours.
+** Terms in FD
+   The set of /FDs/ denoted as ~F~.
+** Armstrong's Inference Rules
+   There are 6 properties of functional dependencies.
+
+   Example:
+    R(Employee) - (E-ID,E-Name,E-City,E-State)
+    FD 1 - E-ID --> E-Name
+    FD 2 - E-ID --> E-City
+    FD 3 - E-ID --> E-State
+    FD 4 - E-City --> E-State
+*** Reflexive
+    If Y subset of X , then X-->Y is always true.
+*** Augmentation
+    (Notation XZ stands for X U Z and YZ stands for Y U Z)
+    if X-->Y then XZ-->YZ.
+*** Transitive
+    if X-->Y and Y-->Z . Then new /FD/ can be X-->Z.
+*** Decomposition
+    If X-->YZ then X-->Y and X--Z holds true
+*** Union( Reverse of Decomposition)
+    If X-->Y and X-->Z then X-->YZ holds true.
+*** Psuedotransitivity
+    If X-->Y and WY-->Z then WX-->Z.
+    Proof
+    X-->Y [1]
+    Augment [1][X-->y] with the attribute set W
+    XW --> YW [2]
+    YW--> Z [3]
+    Apply transivity rule using [2] and [3]
+    XW-->YW and YW-->Z
+    then WX-->Z
+** Attribute Closure
+   The set of attributes that are functionally dependent on the attribute A is called /Attribute Closure/ of A
+   and it can be represented as A+.
+   Using above FD's.
+   The attribute closure of E-ID can be calculated as:
+   - Add E-ID to the set {E-ID}
+   - Add attributes which can be derived from any attribute of set. In this case E-Name and E-CITY, E-STATE can be
+     derived from E-ID. So these are also part of closure.
+   - {E-ID]+ = {E-ID, E-Name, E-City,E-State}
+   - {E-Name}+ = {E-Name}
+   - {E-City}+ = {E-City , E-State}
+** Types of Functional Dependencies
+*** Multivalued
+    Represented as -->-->.
+    Example
+    |-----------+-------+----------|
+    | Car-Model | Myear | Color    |
+    | H001      |  2017 | Metallic |
+    |-----------+-------+----------|
+
+    Here Myear , color is multivalued-attribute.As they are independent with each other , but dependent on a common attribute.
+    Multiple independent attributes dependent on a single common attribute.
+
+    Here Car-Model-->Myear and Car-Model-->Color.
+    
+*** Trivial
+    Set of attributes are included in that attribute.
+    Basically reflexive property
+    X-->Y is a trivial functional dependency if Y subset of X.
+*** Non-Trivial
+    When A-->B holds true where B is not a subset of A.
+    |-----------+----------------+-----|
+    | Company   | CEO            | Age |
+    | Microsoft | Satya Nandella |  51 |
+    |-----------+----------------+-----|
+
+    We can find CEO from Company , but CEO is not subset of Company.
+*** Transitive
+    Simple transitive feature.
+
+    If X-->Y and Y-->Z is true , X-->Z is true.
+* Questions
+

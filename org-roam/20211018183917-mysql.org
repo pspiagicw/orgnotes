@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       0a2f0864-4ad5-49f8-9048-7c37d574a5db
+:END:
+#+title: MySQL
+* Mysql
+  This database management system is for my college work.
+  I have experience with it , know a little things about it.
+  I will maintain my notes with Org Roam , no problem.
+  They will have practicals and code-examples , along with
+  algebraic expressions
+
+  Topics:
+    [[id:ad69a0a5-5ab1-405d-957c-7fc612fc088f][Database Management Systems]] 
+    [[id:a2ff9356-803a-4629-a751-9004647a5e75][Relational Model]]
+    [[id:bc4c65ab-6f89-40e4-8d63-0c88daebaf54][Data Independence]] 
+    [[id:eeeba756-3c33-41d3-8743-a2eb3e5b82a7][Entity Representation Diagrams]]
+    [[id:0f069b33-6c9d-4894-8f6a-6af1a57bb0e9][Integrity Constraints]]
+    [[id:3f2bcca6-b317-41be-b71a-ec59289cceb7][Selection Contraints]]
+    [[id:97180e72-7898-4c2b-a99b-a1fb6f8c7790][Joins in MySQL]]
+    [[id:d332f288-094c-4e14-b1bc-adbd3d553021][Formal Query Language]]
+    [[id:7548a6c7-364f-464a-803b-e3b89a9f71bf][MySQL Basic Functions]]
+    [[id:41cbb2ae-6c42-4e2e-9d9b-c91038b487cb][Functional Dependencies]]

@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       bc4c65ab-6f89-40e4-8d63-0c88daebaf54
+:END:
+#+title: Data Independence
+#+author: pspiagicw
+#+date:<2021-09-13 Mon> 
+
+* DBMS Architecture
+  Efficient way of distributing the effort needed for efficient access between multiple clients.
+  
+** Tier 1
+   In this tier database is directly available to the user. It means the user can directly sit on the DBMS and uses it.
+   Does not provide handy tool for end users.
+   Used for development and local applications.
+   
+** Tier 2
+   A basic client and server. A server is running constantly and the client connects to the running server using API's like ODBC and JDBC.
+   Client side has UI . 
+   
+** Tier 3
+   Has three layers
+   * Presentation
+     Your app on the user's device. Does all the work of showing UI to the user.
+   * Application Layer
+     Your actual server , that apps is polling. Does all the user authentication and checking of data integrity.
+   * Database Server
+     The database server that your server is querying.Does all the work of storing and retrieving the data.
+     
+* Installation of MySQL
+  Simply install mysql
+  #+begin_src shell
+sudo pacman -S mysql
+  #+end_src
+   

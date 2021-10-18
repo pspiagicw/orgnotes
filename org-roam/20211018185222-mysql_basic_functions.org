@@ -1,0 +1,287 @@
+:PROPERTIES:
+:ID:       7548a6c7-364f-464a-803b-e3b89a9f71bf
+:END:
+#+title: MySQL Basic Functions
+#+author: pspiagicw
+#+property: header-args:sql :dhhost 127.0.0.1 :engine mysql :database shit :exports both :eval never-export :dbpassword shrgooglegithub 
+* MySQL Basic Fuctions
+  
+** Single Row Functions
+   
+*** ASCII Function
+    Gives ASCII value of character
+
+    Calculates ascii value of first character if string.
+    #+begin_src sql
+select ascii(CustomerName) from Customers;
+    #+end_src
+    #+begin_src sql
+select ascii('Pratham') as asciicolumn;
+    #+end_src
+
+    #+RESULTS:
+    | asciicolumn |
+    |-------------|
+    |          80 |
+
+    #+begin_src sql
+select ascii('a') as asciicolumn;
+    #+end_src
+
+    #+RESULTS:
+    | asciicolumn |
+    |-------------|
+    |          97 |
+
+    #+begin_src sql
+select ascii('a') from Customers;
+    #+end_src
+
+*** Char Length
+    Gives length of string
+    #+begin_src sql
+select char_length(CustomerName) from Customers;
+    #+end_src
+    #+begin_src sql
+select char_length('Pratham') as namelength;
+    #+end_src
+
+    #+RESULTS:
+    | namelength |
+    |------------|
+    |          7 |
+    
+*** ConCat
+    Concats multiple strings
+    #+begin_src sql
+select concat("sql" , "tutorial" , "is") as concatenatedString;
+    #+end_src
+
+    #+RESULTS:
+    | concatenatedString |
+    |--------------------|
+    | sqltutorialis      |
+    
+*** Format Function
+    Chops the given deciman places
+    #+begin_src sql
+select format(781.00,1);
+    #+end_src
+
+    #+RESULTS:
+    | format(781.00,1) |
+    |------------------|
+    |            781.0 |
+    
+*** LCASE Function
+    #+begin_src sql
+select lcase('SQL tutorial');
+    #+end_src
+
+    #+RESULTS:
+    | lcase('SQL tutorial') |
+    |-----------------------|
+    | sql tutorial          |
+
+*** UCASE
+    #+begin_src sql
+select ucase('sql tutorial');
+    #+end_src
+
+    #+RESULTS:
+    | ucase('sql tutorial') |
+    |-----------------------|
+    | SQL TUTORIAL          |
+
+*** Upper/Lower
+    Makes given input , upper/lower case
+    #+begin_src sql
+select lower('Name') as name;
+select upper('Name') as name;
+    #+end_src
+
+    #+RESULTS:
+    | name |
+    |------|
+    | name |
+    | name |
+    | NAME |
+
+*** Replace Function
+    Replaces given string according to given conditions
+    #+begin_src sql
+select replace('SQL Tutorial','SQL','HTML');
+    #+end_src
+
+    #+RESULTS:
+    | replace('SQL Tutorial','SQL','HTML') |
+    |--------------------------------------|
+    | HTML Tutorial                        |
+    
+*** LTRIM
+    Trims from the left
+    #+begin_src sql
+select ltrim('  SQL');
+    #+end_src
+
+    #+RESULTS:
+    | ltrim('  SQL') |
+    |----------------|
+    | SQL            |
+
+*** RTRIM
+    Trims from the right
+    #+begin_src sql
+select rtrim('sql    ');
+    #+end_src
+
+    #+RESULTS:
+    | rtrim('sql    ') |
+    |------------------|
+    | sql              |
+    
+*** TRIM
+    Trims from both sides.
+    #+begin_src sql
+select trim('    sql   ');
+    #+end_src
+
+    #+RESULTS:
+    | trim('    sql   ') |
+    |--------------------|
+    | sql                |
+
+*** Substr function
+    Extract a substring from string
+    Takes start and length of substring
+    #+begin_src sql
+select substr('SQL Tutorial',5,3);
+    #+end_src
+
+    #+RESULTS:
+    | substr('SQL Tutorial',5,3) |
+    |----------------------------|
+    | Tut                        |
+
+*** STRCMP
+    Compare two strings
+    * string1 = string2 , function return 0
+    * string1 < string2 , function return -1
+    * string1 > string2 , function returns 1
+    #+begin_src sql
+select strcmp('SQL Tutorial','SQL Tutorial');
+    #+end_src
+
+    #+RESULTS:
+    | strcmp('SQL Tutorial','SQL Tutorial') |
+    |---------------------------------------|
+    |                                     0 |
+    
+** DATE Functions
+   Date type
+   * DATE - format YYYY-MM-DD
+   * DATETIME - format YYYY-MM-DD HH:MI:SS
+   * TIMESTAMP - format YYYY-MM-DD HH:MI:SS
+   * YEAR - format YYYY or YY
+*** Add Date Function
+    Add Date function adds a time/date interval to a date then returns the date.
+    #+begin_src sql
+select adddate('2017-06-15',interval 15 minute);
+    #+end_src
+
+    #+RESULTS:
+    | adddate('2017-06-15',interval 15 minute) |
+    |------------------------------------------|
+    | 2017-06-15 00:15:00                      |
+
+    #+begin_src sql
+select adddate('2017-06-15',interval 10 day);
+    #+end_src
+
+    #+RESULTS:
+    | adddate('2017-06-15',interval 10 day) |
+    |---------------------------------------|
+    |                            2017-06-25 |
+*** Add Time
+    Adds time
+    #+begin_src sql
+select addtime('2017-06-15 09:34:21','2:10:5');
+    #+end_src
+
+    #+RESULTS:
+    | addtime('2017-06-15 09:34:21','2:10:5') |
+    |-----------------------------------------|
+    | 2017-06-15 11:44:26                     |
+*** CurDate
+    Gives current date
+    #+begin_src sql
+select curdate();
+    #+end_src
+
+    #+RESULTS:
+    |  curdate() |
+    |------------|
+    | 2021-10-13 |
+
+*** Current Time
+    #+begin_src sql
+select curtime();
+    #+end_src
+
+    #+RESULTS:
+    | curtime() |
+    |-----------|
+    |  14:17:52 |
+    
+*** Date Sub
+    Substracts tiem from date
+    #+begin_src sql
+select date_sub('2017-06-15',interval 15 minute);
+    #+end_src
+    
+*** Day Function
+    Returns Day of the month from given date
+    
+*** Time Format
+    Formats given time by a specifiied format.
+    
+*** Week Function
+    Gives week of the year from the date
+    #+begin_src sql
+select week('2017-10-25');
+select week(curdate());
+    #+end_src
+
+    #+RESULTS:
+    | week('2017-10-25') |
+    |--------------------|
+    |                 43 |
+    |    week(curdate()) |
+    |                 42 |
+
+*** DateDIFF Function
+    Difference between dates
+    #+begin_src sql
+
+select datediff('2017-06-25','2017-06-15');
+    #+end_src
+
+    #+RESULTS:
+    | datediff('2017-06-25','2017-06-15') |
+    |-------------------------------------|
+    |                                  10 |
+    
+*** Date Format
+    Formats given date according to given format.
+    Uses standard unix date format.
+    #+begin_src sql
+select date_format('2021-10-13','%y %m %d');
+
+    #+end_src
+
+    #+RESULTS:
+    | date_format('2021-10-13','%y %m %d') |
+    |--------------------------------------|
+    | 21 10 13                             |
+    
+

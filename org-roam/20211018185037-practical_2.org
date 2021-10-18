@@ -1,0 +1,69 @@
+:PROPERTIES:
+:ID:       ad55a5c8-e6e1-4045-abe7-07674ce50ae1
+:END:
+#+title: MySQL Practical 2
+#+author: pspiagicw
+#+property: header-args:sql :dhhost 127.0.0.1 :engine mysql :dbpassword shrgooglegithub :database practical :resutls output
+#+date:<2021-09-22 Wed> 
+
+* Practical 2 
+** Create table with 10 meaningful attributes
+   #+begin_src sql
+create table programmers(ename varchar(20) , empid int , age int , address varchar(50) , department varchar(10) , salary int);
+   #+end_src
+
+   #+RESULTS:
+   |---|
+** Insert values
+   #+begin_src sql
+insert into programmers values ('snowden',0,22,'Russia','Hacking',10500);
+   #+end_src
+   Inserting 9 more meaningful values
+   #+begin_src sql
+insert into programmers values ('rstallman', 12 ,89 , 'US' ,'OS', 145);
+   #+end_src
+** Select values from tables;
+   #+begin_src sql
+select * from programmers;
+   #+end_src
+
+   #+RESULTS:
+   | ename     | empid | age | address | department | salary |
+   |-----------+-------+-----+---------+------------+--------|
+   | snowden   |     0 |  22 | Russia  | Hacking    |  10500 |
+   | rstallman |    12 |  89 | US      | OS         |    145 |
+** Project Operations
+   #+begin_src sql
+select ename,empid from programmers;
+   #+end_src
+
+   #+RESULTS:
+   | ename     | empid |
+   |-----------+-------|
+   | snowden   |     0 |
+   | rstallman |    12 |
+** Distince Keyword
+   Used to display distince values from a column
+   #+begin_src sql
+select distinct empid from programmers;
+   #+end_src
+
+   #+RESULTS:
+   | empid |
+   |-------|
+   |     0 |
+   |    12 |
+** Both select and projection
+   This includes /or/ and /and/ operator
+   * OR: Works as intended
+   * AND: Works as intended
+   #+begin_src sql
+select * from programmers where ename='rstallman' or department='Hacking';
+   #+end_src
+
+   #+RESULTS:
+   | ename     | empid | age | address | department | salary |
+   |-----------+-------+-----+---------+------------+--------|
+   | snowden   |     0 |  22 | Russia  | Hacking    |  10500 |
+   | rstallman |    12 |  89 | US      | OS         |    145 |
+

@@ -1,0 +1,59 @@
+:PROPERTIES:
+:ID:       d332f288-094c-4e14-b1bc-adbd3d553021
+:END:
+#+title: Formal Query Language
+#+author: pspiagicw
+#+date:<2021-09-22 Wed> 
+* Formal Query Language
+** Definitions
+   Query --> Retrieval of information
+   Query Language --> language used for information retrieval
+   Formal Query Language --> Based upon which SQL is developed
+   Types:
+   * Relational Algebra: Creating of table
+   * Tuple Relational Calulus
+   * Domain Relational Calculus
+** Relational Algebra
+   Procedural query language
+
+   Consists of set of operations that take one or two relations as input and produce a new relation as their output.
+   Intermediate used within DBMS.
+   Structured Query Language: Predominant applicatoin level query language declaration.
+*** Fundamental Operations
+**** Select:
+     The select operation display tuples that satisfly a given predicate.
+     We use $\sigma$ to denote selection
+     It produced horizontal subset.
+     Syntax: $\sigma_c(R)$
+     - Where C is a selection condition (= , < , > etc)
+     - R is the relation over which the selection takes place.
+     Example:
+     | sid | name | addr      |
+     | 123 | Fred | 3 Oxford  |
+     | 345 | John | 6 Hope Rd |
+     | 567 | Ann  | 5 Garden  |
+     Find all students whose id is above 300:
+     Answer $\sigma_{sid > 300}(Student)$ .
+     Resulting Relation
+     | sid | name | addr      |
+     | 345 | John | 6 Hope Rd |
+     | 567 | Ann  | 5 Garden  |
+**** Project Operation
+     Project operation display attributes that satisfy a given predicate
+     We use lowercase Greek letter pi ($\pi$) to denote selection
+     It produced vertical subset.
+     Eliminates duplicates
+     Syntax: $\pi_{A}(R)$
+
+     | sid | cid   | grade |
+     | 123 | CS51T |    76 |
+     | 234 | CS525 |    50 |
+     | 345 | CS525 |    55 |
+     Display all courses id values
+     Answer: $\pi_{cid}(Enrollment)$
+     | cid   |
+     | CS51T |
+     | CS525 |
+
+* Practical
+  [[id:ad55a5c8-e6e1-4045-abe7-07674ce50ae1][MySQL Practical 2]]
