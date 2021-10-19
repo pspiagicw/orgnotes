@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       635fc28d-bc07-4d63-88af-aa688f2a7ca1
+:END:
+#+title: Online Learning
+* Online Learning
+  This type of model takes input incrementally continously ,
+  this model can adapt to data quickly. This is also useful as
+  we can distribute this work over multiple computers and allow
+  for changes on the model while in use.
+
+  This also allows to train if the data does not fit in memory.([[id:e8d1a84b-d816-4869-8458-e284f712b410][Out of Core Learning]])
+  

@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       6df38a51-a6bb-4c85-bbb9-9888400aaf27
+:END:
+#+title: MixUp Method in Deep Learning
+* MixUp
+  This is a technique of [[id:3ef92603-db90-4b5a-b450-a292630ef4fc][Data Augmentation]]  ,where a [[id:b675d9e2-7d7b-48ef-b750-478e69017a80][Neural Network]]  on convex combinations
+  of pairs of examples and their labels. By doing so mixup regularizes the neural network to favour linear
+  behaviour in-between training examples (https://github.com/facebookresearch/mixup-cifar10).
+  GitHub repository https://github.com/facebookresearch/mixup-cifar10.
+
+  In simple words two inputs and their outputs are mixed together,
+  they are mixed in such a way that the model understands both the inputs simultaenously.
+
+  The input are mixed using
+  \begin{equation}
+  \vec{x} = \lambda x_i + ( 1- \lambda ) X_j
+  \end{equation}
+  \begin{equation}
+  \vec{y} = \lambda y_i + ( 1- \lambda ) y_j
+  \end{equation}
+  $\lambda$ is independent for each augmented example.
+  
+  
+

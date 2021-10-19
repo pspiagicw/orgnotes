@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       958d3ad3-8f6e-49d9-94e8-ca4de7974e3f
+:END:
+#+title: Triangular Cyclic Learning Rate
+* Triangular Cyclic Learning Rate
+  :PROPERTIES:
+  :ATTACH_DIR: /home/pspiagicw/documents/org/org-roam/20211019174738-triangular_cyclic_learning_rate-att
+  :END:
+  In this   the value  ~max_lr~ is halved.
+
+ [[file:20211019174738-triangular_cyclic_learning_rate-att/screenshot-20211019-175132.png]] 

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       4ac6c133-af22-4075-b8fd-829beba0b7ba
+:END:
+#+title: No Free Lunch Theorem
+* No Free Lunch Theorem
+  This theoem states that we cannot assume anything about our data.
+  No assumption is perfect , we have to try all of them for saying with 100%
+  gurantee that we have found the best model.

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       d758f120-db0a-4e66-8cf0-d39b887d7634
+:END:
+#+title: Mathematical Model
+* Mathematical Model
+  A Mathematical Model is simply is a mathematical function that takes some input and
+  gives some output.
+  The main property being that that function must be having same output for
+  same input always.

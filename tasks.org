@@ -45,17 +45,17 @@
    SCHEDULED: <2021-10-18 Mon 13:15>
 ** DONE Task: Probablity Lecture 
    SCHEDULED: <2021-10-18 Mon 16:25>
-** TODO Task: Watch Lecture of DAA and complete assignment
+** DONE Task: Watch Lecture of DAA and complete assignment
    SCHEDULED: <2021-10-18 Mon 11:00>
-** TODO Task: Code Review with Nevpro
+** DONE Task: Code Review with Nevpro
    SCHEDULED: <2021-10-18 Mon 19:00>
    Meeting Link -->
    https://us02web.zoom.us/j/88137006157?pwd=ei9aQkNudURkVFBEZmVmMXpleWxZUT09
 ** CANCELLED Task: Jogging
    SCHEDULED: <2021-10-18 Mon 18:00>
-** TODO Task: Write read papers on the notebook
+** DONE Task: Write read papers on the notebook
    SCHEDULED: <2021-10-18 Mon 15:00>
-** TODO Task: Read Introduction to Algorithms
+** DONE Task: Read Introduction to Algorithms
    SCHEDULED: <2021-10-18 Mon 22:00>
 ** TODO Task: Read NLP Unit 1
    SCHEDULED: <2021-10-18 Mon 23:00>
@@ -64,7 +64,13 @@
    From this mail
    [[mu4e:msgid:CAMZ8H37z4-mq1P8NjDxJT3BiPfmoN51L32TfHxvp1RSQ4+YqfQ@mail.gmail.com][Schedule - Mid-Term Examinations, Fall Semester 2021-22]] 
 ** TODO Task: Find a Bloody Group for DAA
-   SCHEDULED: <2021-10-18 Mon>
+   SCHEDULED: <2021-10-19 Tue>
+** DONE Task: Attend NLP Lecture 
+   SCHEDULED: <2021-10-19 Tue 08:30>
+** DONE Task: Attend DAA Lecture 
+   SCHEDULED: <2021-10-19 Tue 11:40>
+** TODO Task: Read NLP Portion for Discussion on Thursday 
+   SCHEDULED: <2021-10-21 Thu>
 * Work Tasks
 ** TODO Task: Add tests for 'boombash' 
 ** DONE Task: Write the blog Endgame for Linux Introductory blogs. 
@@ -91,10 +97,14 @@
    https://github.com/jordansissel/keynav
    Look here for more information
    https://github.com/mgsloan/mgsloan-dotfiles
-** DONE Task: Create new mode for PsuedoCode Mode 
+** CANCELLED Task: Create new mode for PsuedoCode Mode 
    See Pseudocode mode
    SCHEDULED: <2021-10-19 Tue>
+** CANCELLED Task: Attend Code Review 2 
+   SCHEDULED: <2021-10-19 Tue 16:00>
 * General Tasks
 ** DONE Task: Add desktop shortcut for 4132216974 
 ** DONE Task: Keep the vegetables 
    SCHEDULED: <2021-10-18 Mon 10:30>
+** CANCELLED Task: Jogging 
+   SCHEDULED: <2021-10-19 Tue 18:00>

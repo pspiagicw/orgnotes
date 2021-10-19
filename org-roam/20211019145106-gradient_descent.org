@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       3e5901f1-68bb-4031-8430-45ffa8e3bc78
+:END:
+#+title: Gradient Descent
+

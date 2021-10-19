@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       0d0a64d5-b9fd-4139-835d-ca2c1008dbf6
+:END:
+#+title: Batch Learning
+* Batch Learning
+  This is where the model is given entire dataset as a input , which the model works on at a single time.
+  These models have a internal method for dealing with entire dataset at once.
+  Models include
+  - [[id:06515ab3-c94a-466c-a65c-5865c550a114][Least Squares Model]]

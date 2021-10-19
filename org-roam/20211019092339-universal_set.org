@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       68aa998f-881e-4be9-9a3d-c466043c8148
+:END:
+#+title: Universal Set
+
+* Universal Set
+  A Special set in [[id:ab90b3f4-97eb-4d52-8b96-3a03787acf82][Set Theory]] is the /universal set/.
+  For describing universal set we have to introduce another notion , that of [[id:7bb90dc5-debd-46a7-8fcf-4473699a0cea][Universe of Discourse]] .
+  The universal set will then be the set of all indivisuals in the relevant universe of discourse.

@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       1f6c914d-87e0-4899-b9d0-169d8550f2af
+:END:
+#+title: Rabit Karp Algorithm
+* Rabin Karp Algorithm
+  This algorithm calculates the hash value for the pattern , as well for each M-charachter subsequence of text to be compared.
+  If hash value unequal , the algorithm will determine the hash value for next M-character sequence.
+  If equal , algorithm will analyze the pattern and M-character sequence.
+
+  #+begin_src python
+def rabin_karp_matcher(t,p,d.q):
+    "d is seqeuence of characters from the pattern"
+    n = len(t)
+    m = len(p)
+    h = d^(m-1) % q
+    p = 0
+    t0 = 0
+    for i in range(1,m):
+        p = (d*p + p[i]) % q
+        t0 = (d*t0 + t[i]) % q
+        for s in range(0,n-m):
+# Incomplete!!
+    
+  #+end_src
+
+  

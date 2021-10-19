@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       8df3c32b-250f-400a-a9d9-de652d8357f5
+:END:
+#+title: Unsupervised Learning
+* Unsupervised Learning
+  This is giving model only the features.
+  The model can interpolate the features of the data.
+
+  Models that do this include
+  - [[id:dee3c4ec-b60c-4a51-90f1-ace9991ff3fb][K-Means]]
+  - [[id:239a7309-e7f7-4a69-adae-35c58d1fad80][DBSCAN]]
+  - [[id:465cb50e-6713-4603-909f-f996069a914f][Hierarchial Cluster Analysis]]
+  - [[id:2882bfb0-8047-4986-b77a-5a5992ca165a][One-Class SVM]]
+  - [[id:eaf2b181-adff-45e7-b788-69100d36600d][Isolation Forest]]
+  - [[id:10e2f573-26fa-4a6c-a8f9-7c408eeb88ee][Principal Component Analysis]]
+  - [[id:9c29717e-50e4-4821-8335-5120ca079017][Kernel PCA]]
+  - [[id:36ae6550-722a-4036-a76a-157a75920dfb][Locally Linear Embedding]]
+  - [[id:813561b6-1253-408d-a890-c3f53a3fdf04][T-distributed Stochastic Neighbor Embedding]]
+  - [[id:c96be075-dde4-4813-9e6c-e88547e99d84][Association Rule Learning]]
+ 
+

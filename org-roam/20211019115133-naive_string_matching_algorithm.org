@@ -1,0 +1,45 @@
+:PROPERTIES:
+:ID:       99e94401-ba10-4f6c-94d7-73fde7fd04b6
+:END:
+#+title: Naive String Matching Algorithm
+* Naive String Matching Algorithm
+  :PROPERTIES:
+  :ATTACH_DIR: /home/pspiagicw/documents/org/org-roam/20211019115133-naive_string_matching_algorithm-att
+  :END:
+  A type of [[id:30c5c34e-6bec-47d5-9c58-a68cc1072fe5][String Matching Algorithm]] .
+  This tests all the placement of Patterm P [1...m] to text T[1...n].
+  We try shift = 0 , 1, 2 .... n-m , successively and for each shift s.
+  Compare T[s+1,...s+m] for P[1...m]
+
+  This simply uses a loop for finding all valid shift values.
+
+  #+begin_src python
+
+def naive_string_matcher(t,p):
+    n = len(t)
+    m = len(p)
+    for s in range(0,n-m):
+	if p[:m] = t[s+1:s+m]:
+	    print('Pattern Occurs')
+  #+end_src
+
+  Total complexity is O(n-m+1).
+
+** Question:
+   Suppose T = '1011101110' P='111'
+   Finding All possible matches.
+   First Match:
+   [[file:20211019115133-naive_string_matching_algorithm-att/screenshot-20211019-115634.png]] 
+   No other matches possible
+   
+** Question
+   Suppose T = 'AGAATC' and P='AA'. Looks like DNA matching
+   
+** Question
+   Suppose T = 'THIS IS A TEST TEXT' P = 'TEST'
+   
+** Question
+   Suppose T = 'AABAACAADAABAAABAA' P = 'AABA'
+   
+
+  

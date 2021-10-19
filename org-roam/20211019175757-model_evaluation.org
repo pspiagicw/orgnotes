@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       0ffc1000-aeb3-443c-b6ce-bfa1a32ab8cd
+:END:
+#+title: Model Evaluation
+* Model Evaluation
+  This is the technique of determining whether our model will hold up in unseen data.
+  Not only this we also want to compare model performance between multiple models.
+  We want to increase the predictive performance by tweaking the learning model.
+
+  

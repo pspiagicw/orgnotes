@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       629631b7-3a02-4042-90ed-747ed5a5bf17
+:END:
+#+title: Black Box Analysis
+* Black Box Analysis
+  This technique is used to debug and analyze things which do not show its working.
+  These include Neural Networks.The weights and bias values inside neural network,
+  do not make sense for our basic analysis.They only make sense to the neural network,
+  who has learnt it using [[id:07e982b5-476f-4fa3-b867-87c16e73aee6][BackPropagation]] .
+  

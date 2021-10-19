@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       f0f9b5ce-02a0-4dcc-aafa-b1dc335310ca
+:END:
+#+title: Keras InputLayer
+* Keras InputLayer
+  Used as a entry point in [[id:b675d9e2-7d7b-48ef-b750-478e69017a80][Neural Network]] .
+  #+begin_src python
+tf.keras.layers.InputLayer(
+    input_shape=None, batch_size=None, dtype=None, input_tensor=None, sparse=None,
+    name=None, ragged=None, type_spec=None, **kwargs
+)
+  #+end_src

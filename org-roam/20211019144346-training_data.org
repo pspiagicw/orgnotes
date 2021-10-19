@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       62a11b1d-1365-4ef6-b787-6f94d4c207e6
+:END:
+#+title: Training Data
+* Training Data
+  This data is used for training the model.
+  The split is generally 7:2:1 for the training ,[[id:a5ad2c0e-719f-41e9-a08b-f7ae481e50ab][Testing Data]]  and [[id:028d8b11-4fe8-447d-8e1f-a8ae5fe99c00][Validation Data]]  

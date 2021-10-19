@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       07e982b5-476f-4fa3-b867-87c16e73aee6
+:END:
+#+title: BackPropagation
+* BackPropagation
+  This technique uses the differenciation of previous nodes to compute the value of current nodes.
+  Introduced in 1986 .
+  Reference: [[https://sijunhe.github.io/blog/2017/03/27/reading-notes-the-1986-backpropagation-paper/]]
+  

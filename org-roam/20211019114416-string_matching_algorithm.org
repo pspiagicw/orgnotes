@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       30c5c34e-6bec-47d5-9c58-a68cc1072fe5
+:END:
+#+title: String Matching Algorithm
+* String Matching Algorithm
+  The string matching algorithm matches a given text array [1...n] of n characters and pattern array P[1..m] of m characters.
+  The problem are to find an integers , called valid shift , where 0 <= s < n -m and T[s+1...s+m] = P[1...m]
+  In other words to find whether P is a substring of T
+
+  Item of P and T are character drawn from finite alphabet set such as {A,B....Z,a,b...z}
+
+  Substring of T is represented as T[i..j].
+
+  We need to find [[id:fe347697-24ad-462e-861e-688433358bf3][Proper Substring]] in most cases or a normal substring as described above.
+
+  The algorithms used for string matching are
+  - [[id:99e94401-ba10-4f6c-94d7-73fde7fd04b6][Naive String Matching Algorithm]] 
+  - [[id:1f6c914d-87e0-4899-b9d0-169d8550f2af][Rabit Karp Algorithm]] 
+
+
+  

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       4be540e9-0d18-4dc4-be36-8c93ef5bfc4d
+:END:
+#+title: Learning Rate
+

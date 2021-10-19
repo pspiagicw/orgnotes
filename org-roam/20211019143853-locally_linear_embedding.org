@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       36ae6550-722a-4036-a76a-157a75920dfb
+:END:
+#+title: Locally Linear Embedding
+

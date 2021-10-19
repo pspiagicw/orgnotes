@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       2553b645-ef3f-456e-91e3-cc4180cd75e9
+:END:
+#+title: 2021-10-19
+* Beautiful Day
+  I captured today's DAA notes in Org-Roam.
+  I also tried to capture NLP notes in Org-Roam , as module 3 started!
+
+  My flutter installation is working perfectly now and even android-studio works with it
+
+  Today a meeting with Vishwas was scheduled , but he did not share the meeting link.
+* Really Good!
+  Flutter installation confirmed!
+  Kept notes on NLP for module 3 was started , [[id:ab90b3f4-97eb-4d52-8b96-3a03787acf82][Set Theory]]
+  Also wrote notes for  DAA , String matching algorithms ,  [[id:30c5c34e-6bec-47d5-9c58-a68cc1072fe5][String Matching Algorithm]] 

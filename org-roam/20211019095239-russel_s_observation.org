@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       ed2cffd4-8d6e-4652-be8e-9949309a6188
+:END:
+#+title: Russel's Observation
+* Russel's Observation
+  Russel observed that if sets are defined by properties of their members , some sets will turn out to be
+  members of themselves and others will not.
+  Example: Set of all elephants is not itself an element , thus not a member of itself.
+  But set of all abstract concepts must contain itself as member , since a set is an abstract concept.
+
+  Properties 'is a member of iteself' and 'not a member of itself' must be defined

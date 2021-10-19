@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       fc09e3bf-5ecc-4ca9-a5eb-477372f22dfc
+:END:
+#+title: Stockholm Syndrome
+* Stockholm Syndrome
+  This is a affect when victims become affectionate to their kidnappers/assaulters.
+  Named after the stockholm bank robbery , where hostages tried to defend thier kidnappers.

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       7bb90dc5-debd-46a7-8fcf-4473699a0cea
+:END:
+#+title: Universe of Discourse
+* Universe of Discourse
+  Definition: Everything that is talked about in a certain text or certain conversation.

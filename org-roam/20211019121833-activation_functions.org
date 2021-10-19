@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       78159c65-5c74-4c2a-bcfc-3f3d6f1b098f
+:END:
+#+title: Activation Functions
+* Activation Functions
+  They are used to provide Non-Linearity in a Neural Network.
+  They can transform input value into value according to a function.
+  They also need to be differenciable at all points for allowing [[id:07e982b5-476f-4fa3-b867-87c16e73aee6][BackPropagation]].
+  
+  

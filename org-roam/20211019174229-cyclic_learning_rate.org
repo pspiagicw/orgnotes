@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       ab3ef98e-321b-4789-b25b-9c078573fc8a
+:ATTACH_DIR: /home/pspiagicw/documents/org/org-roam/20211019174229-cyclic_learning_rate-att
+:END:
+#+title: Cyclic Learning Rate
+  A technique for training [[id:b675d9e2-7d7b-48ef-b750-478e69017a80][Neural Network]] where we vary the [[id:4be540e9-0d18-4dc4-be36-8c93ef5bfc4d][Learning Rate]] with iterations
+  using a function that provides values between reasonable boundary values.
+  Something same as [[id:72cd7575-fc1d-42e3-85cb-7155f915c959][Simulated Annealing]] .
+
+  Paper: https://arxiv.org/abs/1506.01186.
+
+  We have to calculate two things  , ~base_lr~ and ~max_lr~   , the boundary ofcourse.
+  And step_size = how many times the learning rate fluctuate.
+  The fluctuation can be in the visualized in the form of /sin wave/.
+
+  The large humps in learning rate allow to get out of any saddle point or local minima ,
+  while low learning rate allow for learning about the data.
+
+  Important! When the Epochs end , the learning rate must be low , not high!
+[[file:20211019174229-cyclic_learning_rate-att/screenshot-20211019-175116.png]]  
+  
+  Some variations are [[id:958d3ad3-8f6e-49d9-94e8-ca4de7974e3f][Triangular Cyclic Learning Rate]]  , [[id:02616aaa-f6f4-4653-a65d-e7002d71c99e][Exponential Cyclic Learning Rate]] 

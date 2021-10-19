@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       c1aab46a-4ec9-4ffe-a47f-9b6d536a7380
+:END:
+#+title: Stalin Sort
+Stalin Sort is a type of [[id:2381a19c-1219-41e8-ac15-d39e87f03c7c][Sorting Algorithms]] , which operates in O(n) time!!
+Just check consecutive elements in a array , if not simply drop the element not in order
+#+begin_src python :results output
+def stalin_sort(arr):
+    sorted_array = list()
+    for i in range(0,len(arr)-1):
+        if arr[i] < arr[i+1]:
+            sorted_array.append(arr[i])
+
+
+
+    return sorted_array
+print(stalin_sort([1,2,5,3,5,7]))
+#+end_src
+
+#+RESULTS:
+: [1, 2, 3, 5]
+

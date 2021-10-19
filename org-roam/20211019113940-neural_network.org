@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       b675d9e2-7d7b-48ef-b750-478e69017a80
+:END:
+#+title: Neural Network
+* Neural Networks
+  Neural Networks / Artificial Neural Network are collection of nodes also called /Neurons/.
+  Based on the structure of neurons in the human brain.
+
+  These nodes are small [[id:d758f120-db0a-4e66-8cf0-d39b887d7634][Mathematical Model]] , which are arranged in a forms of layers can solve non-linear problems.
+  They are combined with [[id:78159c65-5c74-4c2a-bcfc-3f3d6f1b098f][Activation Functions]]  , to provide [[id:629631b7-3a02-4042-90ed-747ed5a5bf17][Black Box Analysis]] .
+
+  They can solve multiple problems including NLP , Sound Analysis and photo analysis etc.
+

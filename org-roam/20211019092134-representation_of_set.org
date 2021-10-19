@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       bdc3ab28-898e-4e87-8ed0-193f34d74dd9
+:END:
+#+title: Representation of Set
+* Representation
+ [[id:ab90b3f4-97eb-4d52-8b96-3a03787acf82][Set Theory]]  can be represented using three ways in language
+ - Enumeration: {John, Bill , Harry}
+ - Description: {X | X is an Englishman with red hair}
+ - Language: 'The set of all x such that x is an Englishman with red hair'
+

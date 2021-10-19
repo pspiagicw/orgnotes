@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       f8ee2c46-4ceb-428f-8127-c1d1a61b3a2b
+:END:
+#+title: Variance
+* Variance in Machine Learning
+  This is when the model performs significantly differently when the training dataset is changed.
+  This means the model is not contrained enough and is overfitting the dataset.
+  The models that have high variance are KNN , Random Forest , Decision Tree.
+  These model does not have a internal state independent from the data , thus has high variance.

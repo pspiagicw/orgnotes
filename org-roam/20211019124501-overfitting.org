@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       95d76645-2ade-4dfa-b4e4-adc4583a2952
+:END:
+#+title: Overfitting
+* OverFitting
+  This is when the model learns too much about the data , this means the model is having very high [[id:f8ee2c46-4ceb-428f-8127-c1d1a61b3a2b][Variance in Machine Learning]] .
+  Overfitting can be observed , when the training accuracy is increasing but , testing accuracy is static or going down.
+  Method to prevent overfitting are Data Augmentation , Regularizing the Model or choosing a less complex model.
+  

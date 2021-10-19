@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       d0bf2911-ff1a-48b3-a285-7e4914ec1ed8
+:END:
+#+title: Machine Learning
+* Machine Learning
+  Art of designing algorithm that change their output
+  dynamically for the same input using the input itself.
+
+  Or designing algorithms that can improve themselves
+  through experience with their inputs.(http://www.cs.cmu.edu/~tom/mlbook.html).
+  Features:
+  - Adapting
+    Adapts to data changes
+  - Learning
+    Learn things that are hard to code
+  - Discovering
+    Invisible relations in data , basically [[id:fc073563-8970-4184-a549-5583397c2358][Data Mining]]
+
+** Types of Machine Learning
+   
+*** Learning
+    They are divided based on whether input and outputs are both given or not.
+    - [[id:732b97d2-7363-465f-a826-e09e418983de][Supervised Learning]]
+    - [[id:8df3c32b-250f-400a-a9d9-de652d8357f5][Unsupervised Learning]]
+    - [[id:89d1df44-0e73-42df-99bd-b897a2336139][Reinforcement Learning]]
+
+*** Rate of Learning
+    This is divided using how the data is given to the model
+    - [[id:0d0a64d5-b9fd-4139-835d-ca2c1008dbf6][Batch Learning]]
+    - [[id:f762467f-1e89-4492-b44b-d1b1ac500199][Mini-Batch Learning]] 
+    - [[id:635fc28d-bc07-4d63-88af-aa688f2a7ca1][Online Learning]]

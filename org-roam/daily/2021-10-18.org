@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       9e326926-1238-41cd-b000-b7c467822b30
+:END:
+#+title: 2021-10-18
+* Most Horrible Day
+  Today's day was the most horrible.
+  For the first time we did 'Nevpro Code Review'
+
+  Lectures noted [[id:3f2bcca6-b317-41be-b71a-ec59289cceb7][Selection Contraints]]
+
+  DAA Homework horrible.
+
+  Meeting again tommorow
+

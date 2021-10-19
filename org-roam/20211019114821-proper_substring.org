@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       fe347697-24ad-462e-861e-688433358bf3
+:END:
+#+title: Proper Substring
+* Proper Substring
+  A proper substring of string  T[1...n] is T[1....j] for some 0 < i < j < n-1.
+  Proper substring always started from 1st character.

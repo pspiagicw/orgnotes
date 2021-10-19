@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       0c59d1f6-e865-4731-8358-a45fb0726485
+:END:
+#+title: Power Sets
+* Power Sets
+  For any set A , we can form the set which consists of all subsets of A.
+  This set is called power set.

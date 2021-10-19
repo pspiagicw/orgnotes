@@ -1,0 +1,11 @@
+#+title: Good Blogs
+#+author: pspiagicw
+* Good Blogs
+  These blogs are good for reading and don't have any RSS feed link for adding in /elfeed/.
+
+  Enjoy!
+  - https://sijunhe.github.io
+
+  - https://paperswithcode.com
+
+  - https://github.com/hurshd0/must-read-papers-for-ml

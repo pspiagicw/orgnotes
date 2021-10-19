@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       3ef92603-db90-4b5a-b450-a292630ef4fc
+:END:
+#+title: Data Augmentation
+* Data Augmentation
+  This is a method where you try to change data so that the model can get more information out of data.
+  This can include simply rotating or cropping the image in [[id:72b7cecb-8c60-4be0-888c-245a23865bff][Convulutional Neural Network]] .
+  This allows us for making the model harder to learn , thus it only learns the important things
+  preventing the model from [[id:95d76645-2ade-4dfa-b4e4-adc4583a2952][Overfitting]] .
+  This also allows us to make new data using existing data , useful when training data is very low.
+
+

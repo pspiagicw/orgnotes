@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f762467f-1e89-4492-b44b-d1b1ac500199
+:END:
+#+title: Mini-Batch Learning
+* Mini-Batch Learning
+  This type of learning takes little batches of data .

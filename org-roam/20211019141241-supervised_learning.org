@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       732b97d2-7363-465f-a826-e09e418983de
+:END:
+#+title: Supervised Learning
+* Supervised Learning
+  A techique where both the input(features) and labels(output) are given to the model.
+  The model can determine the relation between both of them essentially becoming a [[id:d758f120-db0a-4e66-8cf0-d39b887d7634][Mathematical Model]] .
+
+  Think of them as our parents , which will give the problem and their solutions
+  The models includes
+  - [[id:818b274c-5787-422c-b67b-085ebb246ece][K-Nearest Neighbors]]
+  - [[id:7749d618-d134-4c21-af26-d0252ef1897e][Linear Regression]]
+  - [[id:ca526ab8-3f34-41e2-859f-5b4eae3d74a6][Logistic Regression]]
+  - [[id:6c369e50-2bc5-43f5-b003-a3f5fb258b15][Scalar Vector Machines]]
+  - [[id:93cc6e31-dbef-4638-a68e-ab9920bbb611][Decision Tree]]
+  - [[id:b675d9e2-7d7b-48ef-b750-478e69017a80][Neural Network]]  

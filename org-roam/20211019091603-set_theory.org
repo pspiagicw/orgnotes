@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       ab90b3f4-97eb-4d52-8b96-3a03787acf82
+:END:
+#+title: Set Theory
+#+author: pspiagicw
+#+date: <2021-10-19 Tue>
+* Set Theory
+  Set is an abstract collection of distinct object which are called the members or elements of that set.
+  Set theory  puts no such restriction on sets , a set can be formed out of elements that have no connection
+  whatsoever
+** Notation
+   Capital Letters used to denote the set itself. Small italic lower-case letters used to denote indivisual objects.
+
+   To specify a object is in a set we use $ a \in B $
+   

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       02616aaa-f6f4-4653-a65d-e7002d71c99e
+:END:
+#+title: Exponential Cyclic Learning Rate
+* Exponential Cyclic Learning Rate
+  :PROPERTIES:
+  :ATTACH_DIR: /home/pspiagicw/documents/org/org-roam/20211019174903-exponential_cyclic_learning_rate-att
+  :END:
+  In this the ~max_lr~ value reduced exponentially
+
+ [[file:20211019174903-exponential_cyclic_learning_rate-att/screenshot-20211019-175150.png]] 
+  

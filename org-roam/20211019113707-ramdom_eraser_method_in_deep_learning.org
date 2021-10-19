@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       7e690ceb-c64d-462e-baf3-b87e1c13b553
+:END:
+#+title: Ramdom Eraser Method in Deep Learning
+* Random Eraser Method
+  This method is for [[id:3ef92603-db90-4b5a-b450-a292630ef4fc][Data Augmentation]]  where we delete random contigous rectangles out of the picture.
+  These rectangles are selected using probablity and mathematical rules.
+  They can improve the model's ability to identify objects in the data.
+  Original Paper [[https://arxiv.org/abs/1708.04896]] .
+

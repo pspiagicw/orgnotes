@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       eaf2b181-adff-45e7-b788-69100d36600d
+:END:
+#+title: Isolation Forest
+

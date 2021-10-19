@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       72b7cecb-8c60-4be0-888c-245a23865bff
+:END:
+#+title: Convulutional Neural Network
+* Convolutional Neural Network
+  This is a type of [[id:b675d9e2-7d7b-48ef-b750-478e69017a80][Neural Network]]  , which has a convulutional layer .
+  This convulutional layer , has multiple filters , each of predetermined convolution size (3x3,5x5) etc.
+  These convolution takes part of image equal to it's size and multiplies with itself.
+  It is very complex to understand in text , this video might help [[https://youtu.be/mFZazxxCKbw?list=PLBw9d_OueVJS_084gYQexJ38LC2LEhpR4&t=3491]]
+
+  These convolutions are predetermined in the given video , but in reality they are learned using [[id:07e982b5-476f-4fa3-b867-87c16e73aee6][BackPropagation]]  .
